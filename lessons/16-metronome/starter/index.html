@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Метроном — стартер</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Метроном</h1>
+    <p class="hint">Диапазон 40–240 BPM. Шаг кнопок: ±5.</p>
+    <section class="card">
+      <div class="pulse" id="pulse" aria-hidden="true"></div>
+      <p class="bpm-display"><span id="bpm">120</span> <small>BPM</small></p>
+      <p class="tempo-name" id="tempo-name">Allegro</p>
+      <p class="beat">Удар: <strong id="beat-count">0</strong></p>
+      <div class="controls">
+        <button type="button" id="minus-btn" aria-label="Минус 5 BPM">−5</button>
+        <button type="button" id="toggle-btn" class="primary">Старт</button>
+        <button type="button" id="plus-btn" aria-label="Плюс 5 BPM">+5</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 12 — Объекты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Каталог песен</h1>
+    <p class="hint">Объект = карточка песни. Допиши массив и отрисовку в <code>script.js</code>.</p>
+    <section class="form-card">
+      <h2>Новая песня</h2>
+      <div class="field">
+        <label for="title">Название</label>
+        <input id="title" type="text" placeholder="Например: Yesterday">
+      </div>
+      <div class="field">
+        <label for="artist">Исполнитель</label>
+        <input id="artist" type="text" placeholder="The Beatles">
+      </div>
+      <div class="field">
+        <label for="bpm">BPM</label>
+        <input id="bpm" type="number" min="40" max="240" placeholder="120">
+      </div>
+      <div class="field">
+        <label for="genre">Жанр</label>
+        <input id="genre" type="text" placeholder="Рок">
+      </div>
+      <button type="button" id="add-btn">Добавить</button>
+    </section>
+    <p class="count" id="count">Песен: 0</p>
+    <section class="catalog" id="catalog"></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

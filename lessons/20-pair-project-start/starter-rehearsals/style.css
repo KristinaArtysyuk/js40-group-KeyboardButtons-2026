@@ -1,0 +1,74 @@
+/* HTML/CSS-разработчик: цвета и подписи. id в HTML не ломай. */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.app {
+  width: 100%;
+  max-width: 560px;
+}
+
+h1, h2 { margin-top: 0; color: #38bdf8; }
+.roles, .muted { color: #94a3b8; font-size: 0.9rem; }
+
+.card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 1.25rem;
+  margin: 1rem 0;
+}
+
+label { display: block; margin: 0.6rem 0 0.25rem; font-size: 0.85rem; color: #cbd5e1; }
+
+input {
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #475569;
+  background: #0f172a;
+  color: #fff;
+}
+
+button {
+  margin-top: 0.9rem;
+  padding: 0.65rem 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#list { list-style: none; padding: 0; }
+
+#list li {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  margin: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+#list button {
+  margin: 0;
+  background: #7f1d1d;
+  color: #fee2e2;
+  font-size: 0.85rem;
+}
+
+.item-title { font-weight: 700; }
+.item-meta { color: #94a3b8; font-size: 0.85rem; margin: 0.2rem 0 0; }

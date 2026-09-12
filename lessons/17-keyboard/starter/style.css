@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background: #111827;
+  color: #f9fafb;
+}
+.wrap { max-width: 640px; margin: 0 auto; padding: 2rem 1rem; text-align: center; }
+.now { color: #d1d5db; font-size: 1.15rem; }
+.keys { display: flex; gap: 8px; justify-content: center; margin-top: 1.5rem; }
+.key {
+  width: 52px;
+  height: 160px;
+  border: 1px solid #9ca3af;
+  border-radius: 0 0 8px 8px;
+  background: #f9fafb;
+  color: #111827;
+  font-weight: 700;
+  cursor: pointer;
+}
+.key.on {
+  background: #fde68a;
+}

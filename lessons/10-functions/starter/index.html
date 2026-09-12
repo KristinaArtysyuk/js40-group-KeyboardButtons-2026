@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 10 — Функции</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Музыкальный помощник</h1>
+    <p class="hint">Напиши свои функции и вызывай их кнопками.</p>
+
+    <section class="panel">
+      <label for="title-input">Название</label>
+      <input id="title-input" type="text" value="Yesterday">
+
+      <label for="artist-input">Исполнитель</label>
+      <input id="artist-input" type="text" value="The Beatles">
+
+      <label for="name-input">Твоё имя</label>
+      <input id="name-input" type="text" value="Дима">
+
+      <label for="bpm-input">BPM</label>
+      <input id="bpm-input" type="number" value="120">
+
+      <div class="actions">
+        <button type="button" id="format-btn">formatTrack</button>
+        <button type="button" id="greet-btn">greet</button>
+        <button type="button" id="tempo-btn">bpmToTempo</button>
+        <button type="button" id="note-btn">randomNote</button>
+      </div>
+    </section>
+
+    <pre id="output" class="output">Результат функций появится здесь…</pre>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

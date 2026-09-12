@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+.wrap { max-width: 480px; margin: 0 auto; padding: 2rem 1rem; }
+.now { color: #94a3b8; }
+#track-list { list-style: none; padding: 0; }
+#track-list li {
+  padding: 0.75rem 1rem;
+  margin: 0.4rem 0;
+  background: #1e293b;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#track-list li.current {
+  background: #1d4ed8;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Список репетиций — парный проект</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Список репетиций</h1>
+    <p class="roles">Один — форма и оформление, второй — массив и удаление в <code>script.js</code>.</p>
+
+    <form id="add-form" class="card">
+      <h2>Новая репетиция</h2>
+      <label for="date">Дата</label>
+      <input id="date" type="date" required>
+      <label for="piece">Произведение</label>
+      <input id="piece" type="text" placeholder="Например: Лунная соната" required>
+      <label for="note">Заметка</label>
+      <input id="note" type="text" placeholder="Темп, штрихи, страница…">
+      <button type="submit">Добавить</button>
+    </form>
+
+    <p id="count" class="muted">Репетиций: 0</p>
+    <ul id="list"></ul>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

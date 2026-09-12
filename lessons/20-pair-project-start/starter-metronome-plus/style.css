@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+.wrap { max-width: 420px; margin: 0 auto; padding: 2rem 1rem; text-align: center; }
+.hint { color: #94a3b8; }
+.bpm { font-size: 1.5rem; }
+.pulse {
+  width: 72px;
+  height: 72px;
+  margin: 1rem auto;
+  border-radius: 50%;
+  background: #334155;
+}
+.pulse.on { background: #38bdf8; }
+.row { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 0.75rem; }
+button {
+  padding: 0.6rem 1rem;
+  border: 0;
+  border-radius: 999px;
+  background: #1d4ed8;
+  color: #fff;
+  cursor: pointer;
+}

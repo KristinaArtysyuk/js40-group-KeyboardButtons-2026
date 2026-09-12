@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 09 — Циклы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Мой плейлист</h1>
+    <p class="hint">Выведи треки циклом и повтори «Бис!» N раз.</p>
+
+    <p id="count" class="count">Треков: —</p>
+    <ul id="track-list" class="track-list"></ul>
+
+    <div class="actions">
+      <button type="button" id="show-btn">Показать плейлист</button>
+    </div>
+
+    <section class="bis">
+      <h2>Бис!</h2>
+      <label for="repeat-count">Сколько раз повторить?</label>
+      <input id="repeat-count" type="number" min="1" max="20" value="3">
+      <button type="button" id="bis-btn">Повторить</button>
+      <div id="bis-box" class="bis-box"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

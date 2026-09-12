@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 14 — Формы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Поиск по каталогу</h1>
+    <p class="hint">Свяжи фильтры в script.js (логика И).</p>
+    <section class="filters">
+      <div class="field">
+        <label for="q">Текст (название или исполнитель)</label>
+        <input id="q" type="text" placeholder="Например: Queen">
+      </div>
+      <div class="field">
+        <label for="bpm">Макс. BPM: <span id="bpm-label">200</span></label>
+        <input id="bpm" type="range" min="60" max="200" value="200">
+      </div>
+      <div class="field">
+        <label for="genre">Жанр</label>
+        <select id="genre">
+          <option value="">Все жанры</option>
+          <option value="Классика">Классика</option>
+          <option value="Рок">Рок</option>
+          <option value="Джаз">Джаз</option>
+          <option value="Поп">Поп</option>
+        </select>
+      </div>
+      <button type="button" id="reset-btn" class="secondary">Сбросить</button>
+    </section>
+    <p class="count" id="count">Найдено: 0</p>
+    <section class="catalog" id="catalog"></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Музыкальная викторина — старт пары</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <!-- === ЧАСТЬ 1: HTML-разработчик — разметка экранов === -->
+    <section id="screen-start" class="screen">
+      <h1>Музыкальная викторина</h1>
+      <p class="lead">Проверь знания теории: ноты, термины, композиторы, инструменты.</p>
+      <p class="roles">Пара: один делает UI (этот файл + CSS), другой — логику в <code>script.js</code>.</p>
+      <button id="btn-start" type="button">Начать</button>
+    </section>
+
+    <section id="screen-quiz" class="screen hidden">
+      <div class="progress-wrap">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <p id="progress-text" class="muted">Вопрос 1 из 10</p>
+      <h2 id="question-text">Текст вопроса</h2>
+      <div id="answers" class="answers">
+        <!-- кнопки ответов создаёт JS или допиши сюда разметку -->
+      </div>
+      <p id="feedback" class="feedback" aria-live="polite"></p>
+    </section>
+
+    <section id="screen-result" class="screen hidden">
+      <h2>Результат</h2>
+      <p id="score-text">Твой счёт: 0 / 0</p>
+      <p id="grade-text" class="grade">Оценка: —</p>
+      <button id="btn-retry" type="button">Пройти ещё раз</button>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

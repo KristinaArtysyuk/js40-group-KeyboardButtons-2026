@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0; min-height: 100vh; font-family: system-ui, sans-serif;
+  background: linear-gradient(160deg, #1a1028 0%, #0d1b2a 50%, #1b263b 100%);
+  color: #e8e6f0;
+}
+.wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem; }
+h1 { margin: 0 0 0.5rem; font-size: 1.6rem; }
+.hint { color: #a8a0c0; margin-bottom: 1.5rem; }
+button {
+  padding: 0.7rem 1.1rem; border: none; border-radius: 999px;
+  background: linear-gradient(90deg, #7c3aed, #db2777);
+  color: #fff; font-size: 0.95rem; font-weight: 600; cursor: pointer;
+}
+button:hover { filter: brightness(1.08); }
+button.secondary { background: rgba(255,255,255,0.12); }
+input, select {
+  width: 100%; padding: 0.65rem 0.8rem; border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.18); background: rgba(0,0,0,0.25);
+  color: #e8e6f0; font-size: 1rem;
+}
+label { display: block; font-size: 0.8rem; color: #9b8ec4; margin-bottom: 0.3rem; }
+.field { margin-bottom: 0.9rem; }
+code { background: rgba(255,255,255,0.1); padding: 0.1em 0.35em; border-radius: 4px; }
+.form-card, .song-card {
+  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px; padding: 1.1rem 1.25rem; margin-bottom: 1rem;
+}
+.catalog { display: grid; gap: 0.85rem; }
+.song-card h2 { margin: 0 0 0.35rem; font-size: 1.2rem; color: #f0e6ff; }
+.meta { margin: 0.2rem 0; color: #c8c0e0; font-size: 0.95rem; }
+.badge {
+  display: inline-block; margin-top: 0.5rem; padding: 0.2rem 0.65rem;
+  border-radius: 999px; background: rgba(124,58,237,0.35); font-size: 0.8rem;
+}
+.tempo { color: #f9a8d4; font-weight: 600; }
+.count { color: #a8a0c0; margin-bottom: 0.75rem; }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Метроном+ — парный проект</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Метроном+</h1>
+    <p class="hint">Дополнение к парному проекту. Доведите размер такта и акцент доли. Викторина — в папке starter/.</p>
+    <p class="bpm">BPM: <strong id="bpm">100</strong></p>
+    <p>Размер: <span id="meter-label">4/4</span> · доля <span id="beat-label">0</span></p>
+    <div id="pulse" class="pulse"></div>
+    <div class="row">
+      <button type="button" id="slower">−5</button>
+      <button type="button" id="toggle">Старт</button>
+      <button type="button" id="faster">+5</button>
+    </div>
+    <div class="row">
+      <button type="button" data-meter="2">2/4</button>
+      <button type="button" data-meter="3">3/4</button>
+      <button type="button" data-meter="4">4/4</button>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

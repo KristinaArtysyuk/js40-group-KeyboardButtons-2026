@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рандомайзер пьес — парный проект</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>Рандомайзер пьес</h1>
+    <p class="roles">Один — форма и список, второй — выбор 3 пьес без повторов в <code>script.js</code>.</p>
+
+    <div class="row">
+      <input id="piece-input" type="text" placeholder="Название пьесы">
+      <button type="button" id="add-btn">Добавить</button>
+    </div>
+
+    <p id="count" class="muted">В списке: 0</p>
+    <ul id="pool"></ul>
+
+    <button type="button" id="pick-btn">Показать 3 случайные</button>
+    <p id="message" class="muted"></p>
+    <ol id="picked"></ol>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

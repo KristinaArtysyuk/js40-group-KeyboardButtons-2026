@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 11 — Массивы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Плейлист</h1>
+    <p class="hint">Массив треков: добавить, показать все, случайный.</p>
+
+    <div class="add-row">
+      <input id="song-input" type="text" placeholder="Название трека" autocomplete="off">
+      <button type="button" id="add-btn">Добавить</button>
+    </div>
+
+    <div class="actions">
+      <button type="button" id="show-btn">Показать все</button>
+      <button type="button" id="random-btn" class="accent">Случайный трек</button>
+      <button type="button" id="remove-btn" class="danger">Удалить последний</button>
+    </div>
+
+    <p id="count" class="count">Треков: 0</p>
+    <ul id="playlist" class="playlist"></ul>
+    <div id="random-box" class="random-box">Случайный трек появится здесь</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 08 — Угадай ноту</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Угадай ноту</h1>
+    <p class="hint">Ноты: До, Ре, Ми, Фа, Соль, Ля, Си. Введи ответ и нажми «Проверить».</p>
+
+    <div class="panel">
+      <p>Загадана нота (смотри в консоль или угадывай вслепую).</p>
+      <label for="guess">Твой ответ</label>
+      <input id="guess" type="text" placeholder="Например: Ми" autocomplete="off">
+      <div class="actions">
+        <button type="button" id="check-btn">Проверить</button>
+        <button type="button" id="new-btn" class="secondary">Новая нота</button>
+      </div>
+      <p id="result" class="result">Результат появится здесь…</p>
+      <p id="attempts" class="attempts">Попытки: 0</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

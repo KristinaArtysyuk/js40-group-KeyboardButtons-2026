@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 15 — Охота за багами</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <header class="top">
+      <p class="badge-debug">DEBUG MODE</p>
+      <h1>Охота за багами</h1>
+      <p class="hint">Открой консоль (F12) и чини баги по одному. Подсказки — в комментариях script.js.</p>
+    </header>
+
+    <section class="panel">
+      <h2>Карточка трека</h2>
+      <div class="track-card" id="track-card">
+        <p class="label">Название</p>
+        <p class="value" id="title">—</p>
+        <p class="label">Исполнитель</p>
+        <p class="value" id="artist">—</p>
+        <p class="label">BPM</p>
+        <p class="value" id="bpm-value">—</p>
+        <p class="status" id="status">Жду исправлений…</p>
+      </div>
+      <button type="button" id="check-btn">Проверить</button>
+    </section>
+
+    <aside class="tips">
+      <h3>Шпаргалка</h3>
+      <ul>
+        <li>F12 → вкладка Console</li>
+        <li><code>console.log(...)</code> — твой друг</li>
+        <li>Красный текст = ошибка, кликни по ссылке справа</li>
+      </ul>
+    </aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

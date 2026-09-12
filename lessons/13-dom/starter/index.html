@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Урок 13 — DOM</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Концертная афиша</h1>
+    <p class="hint">Найди элементы и меняй текст/классы в script.js.</p>
+    <div class="toolbar">
+      <button type="button" id="btn-title">Сменить название</button>
+      <button type="button" id="btn-date">Сменить дату</button>
+      <button type="button" id="btn-venue">Сменить площадку</button>
+      <button type="button" id="btn-classical" class="secondary">Тема: классика</button>
+      <button type="button" id="btn-rock" class="secondary">Тема: рок</button>
+      <button type="button" id="btn-jazz" class="secondary">Тема: джаз</button>
+      <button type="button" id="btn-add">Добавить артиста</button>
+    </div>
+    <section class="poster theme-classical" id="poster">
+      <h2 id="concert-title">Вечер камерной музыки</h2>
+      <p class="meta" id="concert-date">Дата: 12 мая, 19:00</p>
+      <p class="meta" id="concert-venue">Площадка: Большой зал колледжа</p>
+      <div class="artists" id="artists">
+        <div class="artist-card">Анна Скрипка — скрипка</div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
